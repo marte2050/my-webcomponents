@@ -5,18 +5,18 @@
 
 # My Components
 
-[🇧🇷 Leia em Português](docs/readme-ptbr.md)  
+[🇬🇧 Read in English](../readme.md)
 
-## About the Project
+## Sobre o Projeto
 
-This project was created for my landing page to provide structure, a consistent and reusable design, and to be framework-agnostic. It was built using TypeScript, Tailwind CSS, and Stencil.
+Esse projeto foi criado para minha landing page para fins de estruturação, design consistente, reutilizável e também por ser agnóstico de framework. Esse projeto foi construído utilizando Typescript, Tailwindcss e Stencil.
 
-## List of Developed Components
+## Lista de componentes desenvolvidos
 
-Below is the list of components developed so far:
+Abaixo encontra-se a lista de componentes desenvolvidos até o momento:
 
-- Button — Button component with color, size, and icon variations.
+- Button - Componente de botão com variações de cor, tamanho e ícone;
 
-## License
+## Licença
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Esse projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
