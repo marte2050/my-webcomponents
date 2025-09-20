@@ -1,7 +1,13 @@
 import { Config } from '@stencil/core';
+import tailwind, {tailwindGlobal, tailwindHMR} from 'stencil-tailwind-plugin';
 
 export const config: Config = {
   namespace: 'my-webcomponents',
+  plugins:[
+    tailwind(),
+    tailwindHMR(),
+    tailwindGlobal()
+  ],
   outputTargets: [
     {
       type: 'dist',
