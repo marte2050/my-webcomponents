@@ -1,13 +1,16 @@
 import { Config } from '@stencil/core';
-import tailwind, {tailwindGlobal, tailwindHMR} from 'stencil-tailwind-plugin';
+import tailwind, {tailwindHMR} from 'stencil-tailwind-plugin';
 
 export const config: Config = {
   namespace: 'my-webcomponents',
+  globalStyle: './src/app.css',
   plugins:[
     tailwind(),
     tailwindHMR(),
-    tailwindGlobal()
   ],
+  devServer: {
+    reloadStrategy: 'pageReload'
+  },
   outputTargets: [
     {
       type: 'dist',
