@@ -1,0 +1,35 @@
+:host {
+  swiper-container {
+
+    @media screen and (min-width: 375px) {
+      width: 350px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: 500px) {
+      width: 500px;
+      height: 250px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 1000px;
+      height: 350px;
+    }
+
+    @media screen and (min-width: 1920) {
+      width: 1500px;
+      height: 400px;
+    }
+  }
+
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ::part(button-next),
+  ::part(button-prev) {
+    color: #3f3f3f;
+  }
+}
