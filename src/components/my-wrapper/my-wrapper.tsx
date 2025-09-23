@@ -13,12 +13,55 @@ export class MyWrapper {
   @Prop() readonly subtractionHeight: string|undefined;
 
   /**
+   * Vertical position of the content
+   * @default 'center'
+   */
+  @Prop() readonly positionVertical: 'top' | 'center' | 'bottom' | 'between' | 'around' = 'center';
+
+  /**
+   * Gap between elements
+   * @default 'small'
+   */
+  @Prop() readonly gap: 'none' | 'small' | 'medium' | 'large' = 'small';
+
+  /**
    * Get the default styles for the wrapper
    * @returns A string containing the default styles
    */
   private getDefaultStyle(){
-    const defaultStyles = "w-full flex flex-col items-center justify-between gap-8 py-32"
+    const defaultStyles = "w-full flex flex-col items-center"
     return defaultStyles;
+  }
+
+  /**
+   * Get the justify content class for the wrapper
+   * @returns A string containing the justify content class
+   */
+  private getJustifyContent(){
+    const positionVerticalStyles = {
+      top: "justify-start",
+      center: "justify-center",
+      around: "justify-around",
+      between: "justify-between",
+      bottom: "justify-end"
+    }
+
+    return positionVerticalStyles[this.positionVertical];
+  }
+
+  /**
+   * Get the gap class for the wrapper
+   * @returns A string containing the gap class
+   */
+  private getGapClass(){
+    const gapStyles = {
+      none: "gap-0",
+      small: "gap-4",
+      medium: "gap-8",
+      large: "gap-16"
+    }
+
+    return gapStyles[this.gap];
   }
 
   /**
@@ -27,8 +70,8 @@ export class MyWrapper {
    */
   private getSubtractionHeight(){
     if(!this.subtractionHeight) 
-      return ""
-    return `h-[calc(100%_-_${this.subtractionHeight})]`
+      return "h-full"
+    return `h-[calc(100%_-_6rem)]`
   }
 
   /**
@@ -38,7 +81,9 @@ export class MyWrapper {
   private getVariantClass(){
     const defaultStyles = this.getDefaultStyle();
     const subtractionHeight = this.getSubtractionHeight();
-    return `${defaultStyles} ${subtractionHeight}`;
+    const postionVertical = this.getJustifyContent();
+    const gap = this.getGapClass();
+    return `${defaultStyles} ${subtractionHeight} ${postionVertical} ${gap}`;
   }
 
   /**
