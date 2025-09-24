@@ -16,6 +16,12 @@ This project was created for my landing page to provide structure, a consistent 
 Below is the list of components developed so far:
 
 - Button — Button component with color, size, and icon variations.
+- MyIcon - Component for displaying SVG icons;
+- MyNavbar - Navigation bar component;
+- MyNavbarItem - Component for navigation items within MyNavbar;
+- MySection - Component for page sections;
+- MyWrapper - Component to wrap other components and apply layout styles;
+- MyCarousel - Carousel component to display slides;
 
 ## License
 

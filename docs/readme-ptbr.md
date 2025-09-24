@@ -16,6 +16,13 @@ Esse projeto foi criado para minha landing page para fins de estruturação, des
 Abaixo encontra-se a lista de componentes desenvolvidos até o momento:
 
 - Button - Componente de botão com variações de cor, tamanho e ícone;
+- Typography - Componente para estilização de textos, incluindo h1, h2, h3 e parágrafos;
+- MyIcon - Componente para exibição de ícones SVG;
+- MyNavbar - Componente de barra de navegação;
+- MyNavbarItem - Componente para itens de navegação dentro do MyNavbar;
+- MySection - Componente para seções da página;
+- MyWrapper - Componente para envolver outros componentes e aplicar estilos de layout;
+- MyCarousel - Componente de carrossel para exibir slides;
 
 ## Licença
 
