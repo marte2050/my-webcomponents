@@ -39,6 +39,8 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@stencil/core": "^4.27.1",
     "@tailwindcss/postcss": "^4.1.13",
     "@types/jest": "^29.5.14",
