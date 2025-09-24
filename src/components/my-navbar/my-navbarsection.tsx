@@ -103,7 +103,9 @@ export class MyNavbarSection{
   render() {
     return (
       <Host>
-          { this.hiddenMobile ? this.containerMobile() : <ul class={`${this.getCssClassMap()}`}> <slot/> </ul> }
+          { this.hiddenMobile ? 
+          this.containerMobile() : 
+          <ul class={`${this.getCssClassMap()}`}> {this.slottedElements.map(el => <li innerHTML={el.outerHTML}></li>)} </ul> }
       </Host>
     );
   }
