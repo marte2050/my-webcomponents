@@ -63,7 +63,7 @@ export class Button {
      */
     private getVariantClass(){
         const optionsVariantStyles = {
-            "primary": "bg-black text-white",
+            "primary": "bg-transparent text-white",
             "secondary": "bg-gray-500",
             "tertiary": "bg-white border border-gray-500 text-black",
         }
